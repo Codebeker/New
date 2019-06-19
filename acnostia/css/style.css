@@ -1,0 +1,359 @@
+body{
+    font-family: 'Lato';
+}
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+/* SLIDER */
+
+.main-header{
+    background: url(../img/Slider.png) center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* OUR SERVISE */
+
+.our-servise{
+    background-image: url(../img/bagr-service.png);
+    background-size: cover;   
+    display: grid;
+    grid-template-rows: 40% 60%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+
+.servise-cards{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px,250px));
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+
+}
+
+
+
+.servise-card{
+    background-color: rgb(200, 83, 90, 0.5);
+ }
+.servise-card img{
+    margin: 1rem 1rem;
+    max-width: 100%;
+    height: auto;
+}
+.servise-card p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+}
+
+
+
+
+@media (min-width: 992px){
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: 11rem;
+        left: 11rem;
+    }
+    .our-servise{
+        height: 100vh;
+    }
+
+    .servise-title{
+        margin: 2rem 1rem;
+    }
+    .servise-cards,.servise-title{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .servise-card{
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: 992px){
+
+
+
+    .servise-cards,.servise-title{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .servise-cards,.servise-title{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .servise-card-1{
+        grid-area: el1;
+    }
+    .servise-card-2{
+        grid-area: el2;
+    }
+    .servise-card-3{
+        grid-area: el3;
+    }
+    .servise-card-4{
+        grid-area: el4;
+    }
+    .servise-cards{
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(150px,300px));
+        grid-template-areas: 
+        "el1 el2"
+        "el3 el4"
+    }
+    .servise-card h3{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .servise-card {
+        width: 230px;
+    }
+    .servise-card p{
+        display: none;    
+    }
+    .servise-card img{
+        
+        max-width: 100%;
+        height: auto;
+    }
+    .servise-title p{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+
+    .servise-cards{
+        justify-content: center;
+
+        grid-template-columns: repeat(1, minmax(150px,150px));
+        grid-template-areas: 
+        "el1 el2"
+        "el3 el4"
+        
+    }
+    .servise-cards,.servise-title{
+        padding-left: 0.5rem;
+        padding-right: 0rem;
+    }
+    .servise-card h3{
+        display: none;
+    }
+    .servise-card{
+        height: 150px;
+        width: 150px;
+    }
+    .servise-card img{
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+/* WHO WE */
+
+
+.who-we{
+    background-image: url(../img/bgr-whowe.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.who-title{
+    height: 40%;
+}
+
+.who-cards{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px,250px));
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.who-card{
+    background-color: rgb(77, 63, 75,0.5);
+}
+
+.who-card img{
+    padding: 2rem 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 992px){
+    .who-we{
+        height: 100vh;
+    }
+
+    .who-title{
+        margin: 2rem 1rem;
+    }
+    .who-cards,.who-title{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .who-card{
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: 992px){
+
+    .who-cards,.who-title{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .who-cards,.who-title{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .who-card-1{
+        grid-area: who-el1;
+    }
+    .who-card-2{
+        grid-area: who-el2;
+    }
+    .who-card-3{
+        grid-area: who-el3;
+    }
+    .servwhoise-card-4{
+        grid-area: who-el4;
+    }
+    .who-cards{
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(150px,300px));
+        grid-template-areas: 
+        "who-el1 who-el2"
+        "who-el3 who-el4"
+    }
+    .who-card p{
+        display: none;    
+    }
+    .who-card img{
+        padding: 0.5rem 0.5rem;
+        max-width: 100%;
+        height: auto;
+    }
+    .who-card {
+        width: 230px;
+    }
+    .who-title p{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+
+    .who-cards{
+        justify-content: center;
+
+        grid-template-columns: repeat(1, minmax(150px,150px));
+        grid-template-areas: 
+        "who-el1 who-el2"
+        "who-el3 who-el4"
+        
+    }
+    .who-cards,.who-title{
+        padding-left: 0.5rem;
+        padding-right: 0rem;
+    }
+    .who-card h3{
+        font-size: inherit;
+    }
+    .who-card{
+        height: 150px;
+        width: 150px;
+    }
+    .who-card img{
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* OUR WORKS 
+
+.our-works{
+    background-image: url(../img/bgr-ourworks.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* CONTACT US */
+
+.contact-us{
+    background-image: url(../img/bgr-contactus.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 40% 45% 15%;
+    align-items: center;
+    height: 100vh;
+}
+.contacts-ua{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact{
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.contact div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 2:
+
+}
+.footer-title{
+    text-align: center;
+}
+.footer-social{
+    background-color: rgb(104, 160, 151,0.5);
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.footer-list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    justify-content: center;
+}
+
+
+@media (min-width: 992px){
+    .contacts-ua,.footer-title{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+
+
